@@ -1,7 +1,7 @@
 {
   "name": "node-mongo-api-starter",
   "version": "0.1.0",
-  "description": "Node.js / Express / MongoDB / Mongoose / Authentication API Starter Kit ",
+  "description": "Node.js / Express / MongoDB / Mongoose / Authentication API Starter Kit",
   "main": "index.js",
   "engines": {
     "node": "6.6.0",
@@ -24,6 +24,10 @@
     "REST",
     "API"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yhagio/node-mongo-api-starter.git"
+  },
   "author": "Yuichi Hagio <yhagio87@gmail.com> (http://github.com/yhagio)",
   "license": "MIT",
   "dependencies": {
