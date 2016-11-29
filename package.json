@@ -1,0 +1,52 @@
+{
+  "name": "node-mongo-api-starter",
+  "version": "0.1.0",
+  "description": "Node.js / Express / MongoDB / Mongoose / Authentication API Starter Kit ",
+  "main": "index.js",
+  "engines": {
+    "node": "6.6.0",
+    "npm": "3.10.8"
+  },
+  "scripts": {
+    "start": "export NODE_ENV=development && node index.js",
+    "lint": "eslint server; exit 0",
+    "test": "export NODE_ENV=testing && ./node_modules/.bin/mocha -R spec 'test/**/**.test.js' ",
+    "coverage": "istanbul cover _mocha -- -R spec 'test/**/**.test.js' "
+  },
+  "keywords": [
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Mongoose",
+    "JWT",
+    "Passport",
+    "OAuth",
+    "REST",
+    "API"
+  ],
+  "author": "Yuichi Hagio <yhagio87@gmail.com> (http://github.com/yhagio)",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^0.8.7",
+    "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "express-jwt": "^5.1.0",
+    "helmet": "^3.1.0",
+    "jsonwebtoken": "^7.1.9",
+    "mongoose": "^4.7.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.11.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.7.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "morgan": "^1.7.0",
+    "supertest": "^2.0.1"
+  }
+}

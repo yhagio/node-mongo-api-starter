@@ -1,0 +1,20 @@
+language: node_js
+cache:
+  directories:
+    - node_modules
+notifications:
+  email: false
+branches:
+  only:
+    - master
+node_js:
+  - '6.6.0'
+before_install:
+  - npm i -g npm
+services: 
+  - mongodb
+before_script:
+  - npm prune
+script:
+  - mongod
+  - npm run test
