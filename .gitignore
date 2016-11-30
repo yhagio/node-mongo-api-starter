@@ -2,3 +2,4 @@ node_modules
 NOTE.md
 coverage
 yarn.lock
+.travis.yml

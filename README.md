@@ -28,7 +28,6 @@ to get started working on simple Node.js API project quickly
 * [X] User signup, signin
 * [X] API and Unit testing
 * [X] Easily deployable to Heroku (Procfile)
-* [X] Travis yml included
 
 ### To run locally
 
