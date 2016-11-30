@@ -26,11 +26,10 @@ app.use('/api', api);
 app.use('/auth', auth);
 
 // Global Error Handling
-app.use(function(err, req, res, next) {
+app.use((err, req, res) => {
   // if error thrown from jwt validation check
   if (err.name === 'UnauthorizedError') {
-    res.status(401).send({ error: 'Invalid token' });
-    return;
+    return res.status(401).send({ error: 'Invalid token' });
   }
   return res.status(500).send({ error: 'Something went wrong.' });
 });
