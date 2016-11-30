@@ -60,30 +60,4 @@ describe('[USER] /api/users Testing', () => {
         done();
       })
   });
-
-  // it('should be able to get a specific user', (done) => {
-  //   request(app)
-  //     .post('/api/users')
-  //     .send({
-  //       username: 'ali',
-  //       email: 'ali@cc.cc',
-  //       password:'alialiali'
-  //     })
-  //     .set('Accept', 'application/json')
-  //     .expect('Content-Type', /json/)
-  //     .expect(201)
-  //     .end((err, res) => {
-        
-  //       request(app)
-  //         .get(`/api/users/${res.body.user.id}`)
-  //         .set('Accept', 'application/json')
-  //         .expect('Content-Type', /json/)
-  //         .expect(201)
-  //         .end((error, resp) => {
-  //           expect(res.body).to.have.deep.property('user.email', 'ali@cc.cc');
-  //           done();
-  //         });
-        
-  //     });
-  // });
 })
