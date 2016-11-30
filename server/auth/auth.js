@@ -11,7 +11,6 @@ module.exports = {
   getFreshUser,
   verifyUser,
   signToken,
-  // getSignedInUserData
 }
 
 // Decode user's token
@@ -98,30 +97,3 @@ function signToken(id) {
     { expiresIn: config.expireTime }
   )
 };
-
-
-// (OPTIONAL)
-// function getSignedInUserData() {
-//   return function(req, res, next) {
-//     User.findById(req.user._id)
-//       .then(function(user) {
-//         if (!user) {
-//           // if no user is found, but
-//           // it was a valid JWT but didn't decode
-//           // to a real user in our DB. Either the user was deleted
-//           // since the client got the JWT, or
-//           // it was a JWT from some other source
-//           return res.status(401).send('Unauthorized');
-//         }
-//         // update req.user with fresh user from
-//         // stale token data
-//         return res.json({
-//           username: user.username,
-//           firstName: user.firstName,
-//           lastName: user.lastName,
-//           email: user.email
-//         });
-//       })
-//       .catch(err => next(err));
-//   };
-// };
